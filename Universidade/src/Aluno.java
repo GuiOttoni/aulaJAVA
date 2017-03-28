@@ -4,23 +4,29 @@ public class Aluno
 	private String nome;
 	private String cpf;
 	private int rm;
+	private Endereco endereco;
+
+	public Aluno(String _nome, String _cpf, int _rm)
+	{
+		nome = _nome;
+		cpf = _cpf;
+		rm = _rm;
+	}
+	
 	
 	public String getNome() {
 		return nome;
 	}
-	public void setNome(String nome) {
-		this.nome = nome;
-	}
 	public String getCpf() {
 		return cpf;
-	}
-	public void setCpf(String cpf) {
-		this.cpf = cpf;
 	}
 	public int getRm() {
 		return rm;
 	}
-	public void setRm(int rm) {
-		this.rm = rm;
+
+	@Override
+	public String toString() {
+		return "Aluno [nome=" + nome + ", cpf=" + cpf + ", rm=" + rm + ", endereco=" + endereco + "]";
 	}
+	
 }
