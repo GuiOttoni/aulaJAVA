@@ -1,0 +1,19 @@
+package principal;
+
+import Builders.ElevadorBuilder;
+import modelo.Elevador;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		Elevador e = new ElevadorBuilder().setAndarAtual(2)
+										  .setCapacidadePessoas(19)
+										  .setQtdePessoas(8)
+										  .setTotalAndares(26)
+				                          .Build();
+		
+		
+
+	}
+
+}

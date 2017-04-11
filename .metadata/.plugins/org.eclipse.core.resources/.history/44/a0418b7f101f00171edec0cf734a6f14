@@ -1,0 +1,37 @@
+package modelo;
+
+public class Elevador 
+{
+	private int totalAndares;
+	private int capacidadePessoas;
+	private int andarAtual;
+	private int qtdePessoas;
+	
+	public Elevador(){
+		
+	}
+
+	public Elevador(int totalAndares, int capacidadePessoas, int andarAtual, int qtdePessoas) {
+		super();
+		this.totalAndares = totalAndares;
+		this.capacidadePessoas = capacidadePessoas;
+		this.andarAtual = andarAtual;
+		this.qtdePessoas = qtdePessoas;
+	}
+
+	public int getTotalAndares() {
+		return totalAndares;
+	}
+
+	public int getCapacidadePessoas() {
+		return capacidadePessoas;
+	}
+
+	public int getAndarAtual() {
+		return andarAtual;
+	}
+
+	public int getQtdePessoas() {
+		return qtdePessoas;
+	}
+}

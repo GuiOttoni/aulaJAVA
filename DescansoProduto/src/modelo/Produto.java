@@ -24,6 +24,16 @@ public class Produto {
 		this.descricao = descricao;
 		this.fabricante = fabricante;
 	}
+	
+	public Produto(int codigo, double valor, String descricao)
+	{
+		super();
+		this.codigo = codigo;
+		this.valor = valor;
+		this.descricao = descricao;
+		this.fabricante = new Fornecedor();
+	}
+	
 	public Produto() {
 		super();
 	}
@@ -52,6 +62,28 @@ public class Produto {
 		this.fabricante = fabricante;
 	}
 
+	
+	public double getDesconto()
+	{
+		return this.valor * 0.9;
+	}
+	
+	public void setBasico(String _descricao, double _valor)
+	{
+		this.descricao = _descricao;
+		this.valor = _valor;
+	}
+	
+	public String getBasico()
+	{
+		return	"Valor: " + valor + "\n" + 
+				"Descrição: " + descricao + "\n";
+	}
+	
+	public String atualizar(double aumento)
+	{
 
-
+		this.valor = valor*(1+(aumento/100)); 
+		return "Valor atualizado! (" + valor + ")\n";
+	}
 }
